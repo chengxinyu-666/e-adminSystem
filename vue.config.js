@@ -30,7 +30,7 @@ module.exports = {
   // outputDir: name != 'build' ? `dist-${name}/manage` : "dist",
   devServer: {
     // 端口配置  
-    port: 8888,
+    port: 5556,
     // 反向代理配置
     proxy: {
       '/api': {
