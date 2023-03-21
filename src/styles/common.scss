@@ -1,0 +1,105 @@
+// 全局变量
+@import './variables.scss';
+// ele样式覆盖
+@import './element-ui.scss';
+// 顶部右侧显示
+@import './top.scss';
+//通用配置
+@import './scoll.scss';
+
+// 导航标签
+@import './tags.scss';
+// 工具类函数
+@import './mixin.scss';
+// 侧面导航栏
+@import './sidebar.scss';
+// 动画
+@import './animate/vue-transition.scss';
+//主题
+@import './theme/index.scss';
+//适配
+@import './media.scss';
+//通用配置
+@import './normalize.scss';
+
+a{
+  text-decoration: none;
+  color:#333;
+}
+*{
+  outline: none;
+}
+
+.el-card__body {
+  padding-top: 10px !important;
+}
+
+//.avue-crud__pagination {
+//  padding: 5px 0 5px 0px !important;
+//}
+
+.hand {
+  cursor: pointer;
+}
+
+.name-color {
+  color: #409EFF
+}
+.el-card__body {
+  padding-top: 10px !important;
+}
+
+.el-dialog{
+  display: flex;
+  display: -ms-flex; /* 兼容IE */
+  flex-direction: column;
+  -ms-flex-direction: column; /* 兼容IE */
+  margin:0 !important;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  max-height:calc(100% - 30px);
+  max-width:calc(100% - 30px);
+}
+.el-dialog .el-dialog__body{
+  max-height: 100%;
+  flex: 1;
+  -ms-flex: 1 1 auto; /* 兼容IE */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.el-dialog__wrapper {
+  /*隐藏ie和edge中遮罩的滚动条*/
+  overflow: hidden;
+}
+
+:deep .el-card__body {
+  padding-top: 10px !important;
+}
+
+.avue-dialog .el-dialog {
+  display: flex;
+  display: -ms-flex; /* 兼容IE */
+  flex-direction: column;
+  -ms-flex-direction: column; /* 兼容IE */
+  margin:0 !important;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  max-height:calc(100% - 30px);
+  max-width:calc(100% - 30px);
+}
+.el-dialog .el-dialog__body{
+  max-height: 100%;
+  flex: 1;
+  -ms-flex: 1 1 auto; /* 兼容IE */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.avue-crud__search .el-form-item--mini.el-form-item, .avue-crud__search .el-form-item--small.el-form-item {
+  margin-bottom: 6px !important;
+}
